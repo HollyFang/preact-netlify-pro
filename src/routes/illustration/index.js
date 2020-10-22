@@ -6,7 +6,7 @@ import { FormattedCodeBlock } from './formatted-code-block';
 
 import style from './style';
 
-const blogs = (props) => {
+const illustrations = (props) => {
 	const [data, isLoading] = usePrerenderData(props);
 	return (
 		<article class={style.blogcontainer}>
@@ -76,4 +76,4 @@ function getBlogBody(data, isLoading) {
 	}
 }
 
-export default blogs;
+export default illustrations;

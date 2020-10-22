@@ -7,7 +7,7 @@ const blogs = (props) => {
 	const [data, isLoading] = usePrerenderData(props);
 	return (
 		<div class={style.pageBlogs}>
-			<h1 class={style.pageTitle}>My Blogs</h1>
+			<h1 class={style.pageTitle}>使用说明书</h1>
 			{ getBlogsListing(data, isLoading) }
 		</div>
 	);

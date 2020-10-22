@@ -24,31 +24,21 @@ const Home = () => {
 				</div>
 				<div class={style.quote}>
 					<div class={style.details}>
-						Jane presents traditional spanish art with a modern twist. Her work is
-						excellent quality, her technique is brilliant and her love of the
-						subject matter shines through.
+					<p>上海复控华龙微系统技术有限公司是上海复旦微电子集团股份有限公司旗下专注于北斗卫星导航事业的子公司，是国内首家发布北斗导航基带处理芯片的企业。复控华龙聚焦于北斗产业链中基带芯片和模组的产品研发，为产业链中的整机企业提供快速应用方案，并着力开发面向行业的整体解决方案。
+					</p>
+					<p>复控华龙的技术根基源于1995年创立的上海华龙信息技术开发中心，秉承了20年的超大规模集成电路设计和嵌入式系统开发经验并发扬光大，先后发布了“领航”系列RDSS、RNSS、RDSS/RNSS多模多频等北斗基带处理芯片，并在行业解决方案、移动互联网、云服务和物联网等方面有着丰富积累。</p>
+					<p>上海复控华龙微系统技术有限公司专业从事北斗导航领域产品开发与推广，聚焦北斗产业链中基带射频核心芯片和模组开发十余年，先后发布JFM系列北斗多模多频芯片和FHM系列北斗RDSS/RNSS模块，为产业链中的整机企业提供快速应用方案。同时公司坚持产、学、研、用深度结合，专注于高可靠市场好行业应用市场，为海洋气象、车载船载、基础建设、公共安全等行业领域提供解决方案。</p>
+					<p>公司通过GJB9001认证、二级保密资质认证，并具有集成电路企业及博士后工作站资质。</p>
 					</div>
-					<div class={style.author}>- The Local Newspaper</div>
+					<div class={style.author}>- 上海复控华龙微系统技术有限公司</div>
 				</div>
 			</div>
 			<div class={style.bio}>
 				<p class={style.bioleft}>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat. Duis aute irure dolor in
-					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-					culpa qui officia deserunt mollit anim id est laborum.
+				你好，欢迎光临~ 这里记录着电子雷管检测赋码系统的相关说明，目前为测试版本。
 				</p>
 				<p class={style.bioright}>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-					ab illo inventore veritatis et quasi architecto beatae vitae dicta
-					sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-					aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-					qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-					dolorem ipsum quia dolor sit amet, consectetur.
+				电子雷管检测赋码系统支持<strong>正常赋码</strong> 和 <strong>手动补码</strong> 两种生产模式
 				</p>
 			</div>
 		</div>

@@ -3,21 +3,21 @@ import { Link } from 'preact-router';
 import { usePrerenderData } from '@preact/prerender-data-provider';
 import style from './style';
 
-const blogs = (props) => {
+const illustrations = (props) => {
 	const [data, isLoading] = usePrerenderData(props);
 	return (
-		<div class={style.pageBlogs}>
+		<div class={style.pageIllustrations}>
 			<h1 class={style.pageTitle}>使用说明书</h1>
-			{ getBlogsListing(data, isLoading) }
+			{ getIllustrationsListing(data, isLoading) }
 		</div>
 	);
 };
 
-function getBlogsListing(data, isLoading) {
+function getIllustrationsListing(data, isLoading) {
 	if (isLoading) {
 		return (
 			<article class={style.loadingPlaceholder}>
-				<h2 class={`${style.blogtitle} loading`}>&nbsp;</h2>
+				<h2 class={`${style.illustrationtitle} loading`}>&nbsp;</h2>
 				<div class={`${style.loadingBody} loading`}>&nbsp;</div>
 				<div class={`${style.loadingBody} loading`}>&nbsp;</div>
 				<div class={`${style.loadingBody} loading`}>&nbsp;</div>
@@ -25,20 +25,20 @@ function getBlogsListing(data, isLoading) {
 		);
 	}
 	if (data && data.data) {
-		const { data: blogs } = data;
+		const { data: illustrations } = data;
 		return (
 			<>
-				{blogs.edges.map(blog => (
-				<Link href={`/blog/${blog.id}`}>
+				{illustrations.edges.map(illustration => (
+				<Link href={`/illustration/${illustration.id}`}>
 					<article>
-						<h2>{blog.details.title}</h2>
+						<h2>{illustration.details.title}</h2>
 						<div>
 							{
-								(blog.details.tags.substr(1, blog.details.tags.length - 2).split(',') || []).map(tag => <span class={style.tag}>{tag}</span>)
+								(illustration.details.tags.substr(1, illustration.details.tags.length - 2).split(',') || []).map(tag => <span class={style.tag}>{tag}</span>)
 							}
 						</div>
 						<p class={style.preview}>
-							{blog.preview}
+							{illustration.preview}
 						</p>
 					</article>
 				</Link>
@@ -48,4 +48,4 @@ function getBlogsListing(data, isLoading) {
 	}
 }
 
-export default blogs;
+export default illustrations;
